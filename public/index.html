@@ -1,0 +1,42 @@
+<p>AQUI VEM O DADOS</p>
+
+<input id="nome" placeholder="nome">
+<input id="idade" placeholder="idade">
+<input id="sexo" placeholder="sexo">
+<button onclick="salvar()">Salvar</button>
+
+<script>
+    fetch("https://urban-rotary-phone-p4v44r9jjrw2r7pp-3000.app.github.dev/alunos")
+        .then((res) => {
+            return res.json()
+        })
+        .then((dados) => {
+            console.log(dados)
+            document.querySelector("p").innerText = JSON.stringify(dados[0])
+        })
+
+    // função salvar aluno
+    function salvar() {
+        aluno = {
+            nome: document.querySelector("#nome").value,
+            idade: document.querySelector("#idade").value,
+            sexo: document.querySelector("#sexo").value
+        }
+        console.log("aluno para salvar", aluno)
+
+        fetch("https://urban-rotary-phone-p4v44r9jjrw2r7pp-3000.app.github.dev/alunos", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(aluno)
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log("Sucesso:", data)
+            })
+            .catch(error => {
+                console.error("Erro:", error)
+            })
+    }
+</script>

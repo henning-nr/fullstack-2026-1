@@ -1,0 +1,28 @@
+{
+  "alunos": [
+    {
+      "id": 1,
+      "nome": "jose",
+      "idade": "30",
+      "sexo": "m"
+    },
+    {
+      "nome": "Henning",
+      "idade": "42",
+      "sexo": "Masculino",
+      "id": 2
+    },
+    {
+      "nome": "Mauro",
+      "idade": "21",
+      "sexo": "masculino",
+      "id": 3
+    },
+    {
+      "nome": "Mauro",
+      "idade": "21",
+      "sexo": "masculino",
+      "id": 4
+    }
+  ]
+}

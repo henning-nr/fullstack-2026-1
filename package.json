@@ -1,0 +1,24 @@
+{
+  "name": "aula-inicial-fulstack",
+  "version": "1.0.0",
+  "description": "minha primeira aplicação fullstack",
+  "keywords": [
+    "fullstack",
+    "json-server"
+  ],
+  "homepage": "https://github.com/henning-nr/aula-inicial-fulstack#readme",
+  "bugs": {
+    "url": "https://github.com/henning-nr/aula-inicial-fulstack/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henning-nr/aula-inicial-fulstack.git"
+  },
+  "license": "ISC",
+  "author": "Henning Summer",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start":"json-server --watch db.json"
+  }
+}
