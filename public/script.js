@@ -2,7 +2,9 @@
 const url = "https://urban-rotary-phone-p4v44r9jjrw2r7pp-3000.app.github.dev/alunos"
 
 function carregar() {
-    fetch(url)
+    fetch(url,{
+        method: "GET"
+    })
         .then((res) => {
             return res.json()
         })
