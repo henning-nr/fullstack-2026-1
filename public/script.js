@@ -11,7 +11,15 @@ function carregar() {
         .then((dados) => {
             console.log("OS DADOS AQUIIIIIIII", dados)
             for (let dado of dados) {
-                document.querySelector("ul").innerHTML += ` <li class="list-group-item">${dado.nome}</li>`
+                document.querySelector("tbody").innerHTML += 
+                `
+            <tr>
+                <td>${dado.id}</td>
+                <td>${dado.nome}</td>
+                <td>${dado.idade}</td>
+                <td>${dado.sexo}</td>
+            </tr>
+                `
             }
 
         })
