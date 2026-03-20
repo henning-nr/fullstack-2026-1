@@ -41,6 +41,36 @@
       "idade": "45",
       "sexo": "m",
       "id": 7
+    },
+    {
+      "nome": "Direito novo",
+      "idade": "45",
+      "sexo": "f",
+      "id": 8
+    },
+    {
+      "nome": "Direito novo",
+      "idade": "45",
+      "sexo": "f",
+      "id": 9
+    },
+    {
+      "nome": "Arthur",
+      "idade": "20",
+      "sexo": "m",
+      "id": 10
+    },
+    {
+      "nome": "joao paulo",
+      "idade": "35",
+      "sexo": "masc",
+      "id": 11
+    },
+    {
+      "nome": "henrique",
+      "idade": "12",
+      "sexo": "masculino",
+      "id": 12
     }
   ]
 }

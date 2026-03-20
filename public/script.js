@@ -18,6 +18,10 @@ function carregar() {
                 <td>${dado.nome}</td>
                 <td>${dado.idade}</td>
                 <td>${dado.sexo}</td>
+                <td>
+                    <button class="btn btn-success btn-sm" onclick="editar(${dado.id})">Editar</button>
+                    <button class="btn btn-danger btn-sm" onclick="deletar(${dado.id})">Excluir</button>
+                </td>
             </tr>
                 `
             }
@@ -46,10 +50,18 @@ function salvar() {
         .then(response => response.json())
         .then(data => {
             console.log("Sucesso:", data)
-            document.querySelector("ul").innerHTML = ""
+            document.querySelector("tbody").innerHTML = ""
             carregar()
         })
         .catch(error => {
             console.error("Erro:", error)
         })
+}
+
+function editar(id){
+    console.log("editando", id)
+}
+
+function deletar(id){
+    console.log("deletando", id)
 }
